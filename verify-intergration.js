@@ -13,6 +13,14 @@ $(function() {
     const $connect_container   = $('.wallet-information');
     const $wallet_address      = $('.connected-wallet-information .wallet-address');
 
+    const $spirit_error   = $('.spirit-animals.error');
+    const $spirit_success = $('.spirit-animals.success');
+    const $spirit_amount  = $('.spirit-animals .amount');
+
+    const $wasteland_error   = $('.wasteland.error');
+    const $wasteland_success = $('.wasteland.success');
+    const $wasteland_amount  = $('.wasteland .amount');
+
     let provider, web3, contract, web3Modal, account;
 
     init();
@@ -74,7 +82,19 @@ $(function() {
             gas           : getGasAffected()
         };
 
-        console.log(qualified);
+        if(qualified.spirit_animals > 0) {
+            $spirit_error.hide();
+            $spirit_amount.html(qualified.spirit_animals);
+        } else {
+            $spirit_success.hide();
+        }
+
+        if(qualified.gas > 0) {
+            $wasteland_error.hide();
+            $wasteland_amount.html(qualified.gas);
+        } else {
+            $wasteland_success.hide();
+        }
     }
 
     async function getSpiritAnimals() {
