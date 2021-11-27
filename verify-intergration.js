@@ -83,17 +83,17 @@ $(function() {
         };
 
         if(qualified.spirit_animals > 0) {
-            $spirit_error.hide();
+            $spirit_success.show();
             $spirit_amount.html(qualified.spirit_animals);
         } else {
-            $spirit_success.hide();
+            $spirit_error.show();
         }
 
         if(qualified.gas > 0) {
-            $wasteland_error.hide();
+            $wasteland_success.show();
             $wasteland_amount.html(qualified.gas);
         } else {
-            $wasteland_success.hide();
+            $wasteland_error.show();
         }
     }
 
