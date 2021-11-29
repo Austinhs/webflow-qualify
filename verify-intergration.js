@@ -112,7 +112,7 @@ $(function() {
 
     function getGasAffected() {
         if (account.toLowerCase() in lower_gas_list) {
-            return lower_gas_list[account];
+            return lower_gas_list[account.toLowerCase()];
         } else {
             return 0;
         }
