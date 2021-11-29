@@ -21,7 +21,7 @@ $(function() {
     const $wasteland_success = $('.wasteland.success');
     const $wasteland_amount  = $('.wasteland .amount');
 
-    let provider, web3, contract, web3Modal, account;
+    let provider, web3, contract, web3Modal, account, lower_gas_list;
 
     init();
 
@@ -111,8 +111,8 @@ $(function() {
     }
 
     function getGasAffected() {
-        if (account in window.gas_wallets) {
-            return window.gas_wallets[account];
+        if (account.toLowerCase() in lower_gas_list) {
+            return lower_gas_list[account];
         } else {
             return 0;
         }
@@ -126,6 +126,11 @@ $(function() {
 
     async function init() {
         loadUnconnected();
+
+        lower_gas_list = {};
+        for(const wallet in window.gas_wallets) {
+            lower_gas_list[wallet.toLowerCase()] = window.gas_wallets[wallet];
+        }
 
         let Web3Modal = window.Web3Modal.default;
 
