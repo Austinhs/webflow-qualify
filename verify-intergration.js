@@ -82,12 +82,12 @@ $(function() {
             gas           : getGasAffected()
         };
 
-        if(qualified.spirit_animals > 0) {
-            $spirit_success.css('display', 'flex');
-            $spirit_amount.html(qualified.spirit_animals);
-        } else {
-            $spirit_error.css('display', 'flex');
-        }
+        // if(qualified.spirit_animals > 0) {
+        //     $spirit_success.css('display', 'flex');
+        //     $spirit_amount.html(qualified.spirit_animals);
+        // } else {
+        //     $spirit_error.css('display', 'flex');
+        // }
 
         if(qualified.gas > 0) {
             $wasteland_success.css('display', 'flex');
