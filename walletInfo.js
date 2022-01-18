@@ -857,7 +857,7 @@ window.gas_wallets = {
     "0x149d93dfc34bc8092ad9562a6672394d5edb68a4": 2,
     "0x2ba185eecf7c0c7ccf2fd91f9c66c0136bf2bcee": 1,
     "0xcc6ac95737f82fa358775ca806bcd73f781f16e8": 1,
-    "0x3eafd221e0cc0531544e4ebf190026e70d56be1b": 1,
+    "0x5BB94cCf5d8EDB3cD4189c30dC41a0423a5Fc0cF": 1,
     "0x33aea8f43d9685683b236b20a1818afcd48204cd": 2,
     "0xd5329311ad1024e7eb2e7ed722bc22da23cda8ef": 1,
     "0xaaa1bc0cb9ddd771b0f86fa009fb0ce39f9dde2a": 1,
