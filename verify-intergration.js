@@ -126,6 +126,7 @@ $(function() {
     }
 
     async function init() {
+        console.log('test?');
         loadUnconnected();
 
         lower_gas_list = {};
