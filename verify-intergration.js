@@ -17,9 +17,9 @@ $(function() {
     const $spirit_success = $('.spirit-animals.success');
     const $spirit_amount  = $('.spirit-animals .amount');
 
-    const $wasteland_error   = $('.Wasteland.error');
-    const $wasteland_success = $('.Wasteland.success');
-    const $wasteland_amount  = $('.Wasteland .amount');
+    const $wasteland_error   = $('.wasteland.error');
+    const $wasteland_success = $('.wasteland.success');
+    const $wasteland_amount  = $('.wasteland .amount');
 
     let provider, web3, contract, web3Modal, account, lower_gas_list;
 
@@ -41,7 +41,6 @@ $(function() {
     }
 
     async function connect() {
-        console.log('test?');
         try {
             provider = await web3Modal.connect();
             web3     = new Web3(provider);
@@ -126,7 +125,6 @@ $(function() {
     }
 
     async function init() {
-        console.log('test?');
         loadUnconnected();
 
         lower_gas_list = {};
