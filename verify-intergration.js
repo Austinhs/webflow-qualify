@@ -10,16 +10,16 @@ $(function() {
 
 
     const $connected_container = $('.connected-wallet-information');
-    const $connect_container   = $('.wallet-information');
-    const $wallet_address      = $('.connected-wallet-information .wallet-address');
+    const $connect_container   = $('.connect-container');
+    const $wallet_address      = $('.connect-container .wallet-address');
 
     const $spirit_error   = $('.spirit-animals.error');
     const $spirit_success = $('.spirit-animals.success');
     const $spirit_amount  = $('.spirit-animals .amount');
 
-    const $wasteland_error   = $('.wasteland.error');
-    const $wasteland_success = $('.wasteland.success');
-    const $wasteland_amount  = $('.wasteland .amount');
+    const $wasteland_error   = $('.Wasteland.error');
+    const $wasteland_success = $('.Wasteland.success');
+    const $wasteland_amount  = $('.Wasteland .amount');
 
     let provider, web3, contract, web3Modal, account, lower_gas_list;
 
@@ -27,8 +27,8 @@ $(function() {
 
     // Events
     $(document)
-        .on('click', '.wallet-information .div-block-47 .heading-23-copy', connect)
-        .on('click', '.connected-wallet-information .div-block-47 .heading-23-copy', disconnect)
+        .on('click', '.login-btn', connect)
+        .on('click', '.login-out-btn', disconnect)
     ;
 
     async function disconnect() {
