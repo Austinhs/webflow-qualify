@@ -91,6 +91,8 @@ $(function() {
         //     $spirit_error.css('display', 'flex');
         // }
 
+        console.log(qualified);
+
         if(qualified.gas > 0) {
             $wasteland_success.css('display', 'flex');
             $wasteland_amount.html(qualified.gas);
