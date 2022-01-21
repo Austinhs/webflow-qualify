@@ -41,6 +41,7 @@ $(function() {
     }
 
     async function connect() {
+        console.log('test?');
         try {
             provider = await web3Modal.connect();
             web3     = new Web3(provider);
