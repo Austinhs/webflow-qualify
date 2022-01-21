@@ -91,6 +91,7 @@ $(function() {
         //     $spirit_error.css('display', 'flex');
         // }
 
+        console.log(account);
         console.log(qualified);
 
         if(qualified.gas > 0) {
