@@ -11,7 +11,7 @@ $(function() {
 
     const $connected_container = $('.connected-wallet-information');
     const $connect_container   = $('.connect-container');
-    const $wallet_address      = $('.connect-container .wallet-address');
+    const $wallet_address      = $('.wallet-address');
 
     const $spirit_error   = $('.spirit-animals.error');
     const $spirit_success = $('.spirit-animals.success');
