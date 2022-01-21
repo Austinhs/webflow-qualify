@@ -37,6 +37,8 @@ $(function() {
         account  = null;
         contract = null;
 
+        $('.wasteland').css('display', 'none');
+
         loadUnconnected();
     }
 
