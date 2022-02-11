@@ -1142,7 +1142,7 @@ window.gas_wallets = {
     "0xdc16be31461d9ffe8a5aabdea400a69581505054": 1,
     "0xdeb0f9ed7c2748e5aa17bb574a08dfb0c13cdb4f": 1,
     "0xd3cf0cb6f82890de0297110cf6af394d96378d14": 1,
-    "0x0b679f6ac87f7ad18a8b8d50fe7126baec97de31": 1,
+    "0x770b38dc332333a1F0e88e70bfBEeC08b186Ab17": 1,
     "0x73d2b868cc77bd7b28a97f2593c38112d9d083e9": 1,
     "0xe6fbadad7a53fda4dc4c9613a69cd3c5b2b9eb27": 1,
     "0x7509ddbcda4f3b715ec7e9065e1b61175a253be3": 1,
